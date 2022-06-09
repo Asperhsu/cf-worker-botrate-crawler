@@ -38,6 +38,10 @@ export default async function () {
             'Host': 'rate.bot.com.tw',
             'content-type': 'text/csv;charset=UTF-8',
         },
+        cf: {
+            cacheTtl: 300,
+            cacheEverything: true,
+        },
     });
 
     let updatedAt = parseHeaderUpdateTime(response.headers);
